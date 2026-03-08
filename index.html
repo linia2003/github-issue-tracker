@@ -53,14 +53,17 @@
             <div class="flex items-center gap-3 mr-4">
                 <!--search parts-->
                 <div class="relative flex items-center">
-    <img src="./assets/magnifying-glass-solid.png" alt="Search" class="w-5 h-5 absolute left-3 z-20 pointer-events-none opacity-100">
+    <div class="absolute left-4 flex items-center justify-center pointer-events-none z-20">
+        <i class="fa-solid fa-magnifying-glass text-[#64748b]" style="font-size: 0.875rem;"></i>
+    </div>
     <input 
         type="text" 
         id="search-input"
         placeholder="Search issues..." 
-        class="input input-bordered w-64 h-10 pl-10 bg-gray-50 text-sm focus:ring-1 focus:ring-blue-500"
+        class="input input-bordered w-64 h-10 pl-11 bg-white text-sm focus:outline-none focus:border-[#4a00ff] placeholder:text-gray-400"
     />
-</div>          <!--new issue part-->
+</div>
+                          <!--new issue part-->
                 <button onclick="handleSearch()" class="btn btn-sm h-10 px-4 bg-[#4a00ff] hover:bg-[#3d00cc] text-white border-none normal-case">
                     + New Issue
                 </button>
