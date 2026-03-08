@@ -41,8 +41,30 @@
         </div>
     </div>
 
-    <div id="main-dashboard" class="hidden w-full p-8">
-        <h1 class="text-center text-3xl font-bold">Successfully Logged In</h1>
+    <div id="main-dashboard" class="hidden min-h-screen bg-gray-50 w-full">
+        <nav class="bg-white border-b border-gray-200 px-4 py-3 flex items-center justify-between sticky top-0 z-10">
+            <div class="flex items-center gap-2 ml-4">
+                <span class="text-xl font-bold text-gray-800 tracking-tight">GitHub Issues Tracker</span>
+            </div>
+
+            <div class="flex items-center gap-3 mr-4">
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        id="search-input"
+                        placeholder="Search issues..." 
+                        class="input input-bordered w-64 h-10 bg-gray-50 text-sm focus:ring-1 focus:ring-blue-500"
+                    />
+                </div>
+                <button onclick="handleSearch()" class="btn btn-sm h-10 px-4 bg-[#4a00ff] hover:bg-[#3d00cc] text-white border-none normal-case">
+                    + New Issue
+                </button>
+            </div>
+        </nav>
+
+        <div class="max-w-[1200px] mx-auto p-8">
+             <h1 class="text-2xl font-semibold text-gray-700">Successfully Logged In</h1>
+        </div>
     </div>
 
     <script src="script.js"></script>
